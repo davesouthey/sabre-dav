@@ -1,6 +1,28 @@
 ChangeLog
 =========
 
+3.0.1 (2015-07-02)
+------------------
+
+* #674: Postgres sql file fixes. (@davesouthey)
+* #677: Resources with the name '0' would not get retrieved when using
+  `Depth: infinity` in a `PROPFIND` request.
+* #680: Fix 'autoprefixing' of dead `{DAV:}href` properties.
+* #675: NTLM support in DAV\Client. (@k42b3)
+* The zip release ships with [sabre/vobject 3.4.5][vobj],
+  [sabre/http 4.0.0][http], [sabre/event 2.0.2][evnt],
+  [sabre/uri 1.0.1][uri] and [sabre/xml 1.1.0][xml].
+
+
+3.0.0 (2015-06-02)
+------------------
+
+* No changes since last beta.
+* The zip release ships with [sabre/vobject 3.4.5][vobj],
+  [sabre/http 4.0.0][http], [sabre/event 2.0.2][evnt],
+  [sabre/uri 1.0.1][uri] and [sabre/xml 1.0.0][xml].
+
+
 3.0.0-beta3 (2015-05-29)
 ------------------------
 
@@ -142,6 +164,13 @@ ChangeLog
 * #582: `Sabre\DAV\Auth\Plugin::getCurrentUser()` is now deprecated. Use
   `Sabre\DAV\Auth\Plugin::getCurrentPrincipal()` instead.
 * #193: Fix `Sabre\DAV\FSExt\Directory::getQuotaInfo()` on windows.
+
+
+2.1.5 (????-??-??)
+------------------
+
+* #677: Resources with the name '0' would not get retrieved when using
+  `Depth: infinity` in a `PROPFIND` request.
 
 
 2.1.4 (2015-05-25)
@@ -306,6 +335,13 @@ ChangeLog
 * Added: #523 Custom CalDAV backends can now mark any calendar as read-only.
 * The zip release ships with [sabre/vobject 3.3.3][vobj],
   [sabre/http 3.0.0][http], and [sabre/event 2.0.0][evnt].
+
+
+2.0.8 (????-??-??)
+------------------
+
+* #677: Resources with the name '0' would not get retrieved when using
+  `Depth: infinity` in a `PROPFIND` request.
 
 
 2.0.7 (2015-05-25)
